@@ -8,7 +8,7 @@ from google.cloud import vision
 
 st.title('光学文字認識')
 st.write('Powered by google Cloud Vision')
-file_type = st.selectbox('画像のファイル形式を選択', ['png', 'jpg', 'jpeg', 'heic', 'heif', 'gif', 'bmp', 'tif', 'svg'])
+file_type = st.selectbox('画像のファイル形式を選択', ['png', 'jpg', 'jpeg', 'gif', 'bmp', 'tif', 'svg'])
 uploaded_file = st.file_uploader("ファイルアップロード", type=file_type, accept_multiple_files=False)
 
 # Create API client #streamlit: app dashboard > Secretsでsecretsを編集
