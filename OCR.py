@@ -46,6 +46,6 @@ if uploaded_file:
                     output_text += ''.join([
                         symbol.text for symbol in word.symbols
                     ])
-                output_text += '\n'
+                output_text += ' \n'
     st.write('■OCR結果：')
     st.write(output_text)
